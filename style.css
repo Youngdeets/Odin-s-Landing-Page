@@ -4,7 +4,7 @@
 }
 
 main { 
-    width: auto;
+    width: 100%;
 }
 
 /* Header section */
@@ -62,4 +62,7 @@ ul {
     margin-left: 25px;
     flex-shrink: 0;
 }
+
+/* Second Container */
+
 
