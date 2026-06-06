@@ -1,10 +1,19 @@
 * {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto;
 }
 
 main { 
     width: 100%;
+}
+
+.button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    width: 110px;
+    padding: 7px 25px;
+    border-radius: 5px;
 }
 
 /* Header section */
@@ -22,11 +31,16 @@ header {
     flex: 1 1 800px;
 }
 
+#header-div h1 {
+    margin: 0px;
+}
+
 ul {
     display: flex;
     list-style-type: none;
     gap: 16px;
     padding: 0px;
+    align-items: center;
 }
 
 /* First Container */
@@ -34,7 +48,6 @@ ul {
 .section1 {
     background-color:#1F2937;
     display: flex;
-    flex-direction: row;
     padding: 100px 200px;
 }
 
@@ -49,23 +62,20 @@ ul {
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
-#button1 {
-    background-color: #3882F6;
-    color: white;
-    border: 0px solid transparent;
-    width: 110px;
-    padding: 7px 25px;
-    border-radius: 5px;
+.button {
     margin-top: 10px;
 }
 
 #straw-hat {
     width: 575px;
     height: 300px;
-    margin-left: 25px;
+    margin-left: auto;
     flex-shrink: 0;
+    padding-left: 50px;
 }
 
 /* Second Container */
@@ -75,14 +85,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    
+    padding: 50px 0px 150px 0px;
+}
+
+#section-header, #quote {
+    font-size: 36px;
 }
 
 #container2 {
     display: flex;
     flex-direction: row;
-    gap: 75px;
+    gap: 50px;
     padding: 32px 0px;
     text-align: center;
 }
@@ -102,4 +115,78 @@ h1 {
     border: 3px solid #2395fa;
     border-radius: 5px;
     margin-bottom: 16px;
+}
+
+/* Third Container */
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 300px;
+    background-color: #cacccf;
+    color: #000;
+}
+#quote-con {
+    display: flex;
+    width: 950px;
+}
+
+p#author {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#author-con {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    padding: 10px 200px 0px 200px;
+    width: 800px;
+}
+
+#quote {
+    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Fourth Container */
+.section4 {
+    display: flex;
+    padding: 100px 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 #sec4 {
+    padding: 40px 200px;
+    background-color: #3882f6;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+#sec4 {
+    background-color: #2395fa;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+}
+
+div#call-to-action-text {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+#sec4 .button {
+    border: 2px solid #f2f2f2;
+    width: 250px;
+    font-size: 18px;
+    padding: 0px 25px;
 }
